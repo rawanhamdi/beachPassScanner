@@ -1,0 +1,45 @@
+{
+  "name": "community",
+  "version": "0.0.0",
+  "description": "Community Beach Pass Scanner",
+  "main": "app.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha",
+    "js-beautify": "node_modules/.bin/js-beautify -r api/**/*.js",
+    "jshint": "node_modules/.bin/jshint -c .jshintrc --exclude-path .gitignore .",
+    "git-add": "git add --all"
+  },
+  "pre-commit": [
+    "test",
+    "js-beautify",
+    "jshint",
+    "git-add"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rawanhamdi/beachPassScanner.git"
+  },
+  "author": "",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/hagry/community/issues"
+  },
+  "dependencies": {
+    "body-parser": "~1.14.1",
+    "cors": "^2.7.1",
+    "express": "~4.13.4",
+    "js-beautify": "^1.5.10",
+    "jshint": "^2.8.0",
+    "request": "^2.74.0",
+  },
+  "optionalDependencies": {
+    "bcryptjs": "^2.3.0"
+  },
+  "devDependencies": {
+    "forever": "^0.15.1",
+    "js-beautify": "^1.5.10",
+    "jsdoc": "~3.3.2",
+    "jshint": "^2.8.0",
+    "pre-commit": "^1.1.1"
+  }
+}
