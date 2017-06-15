@@ -50,7 +50,7 @@ function scanImage(done) {
         done(null, JSON.stringify(result));
       } else {
         code = JSON.parse(code);
-        if (mon < code.month && d < code.day) {
+        if (mon !== code.month || d !== code.day ) {
           message = 'invalid';
           result.message = message;
           done(null, JSON.stringify(result));
@@ -70,6 +70,7 @@ app.get("/", function(req, res) {
       res.write('Error');
       res.end();
     } else {
+	console.log(result);
       if (result.message === 'invalid_code') {
         res.write(result);
         res.end();

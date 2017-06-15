@@ -1,8 +1,8 @@
 {
   "name": "community",
   "version": "0.0.0",
-  "description": "Community Beach Pass Scanner",
-  "main": "app.js",
+  "description": "Community Application Platform",
+  "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha",
     "js-beautify": "node_modules/.bin/js-beautify -r api/**/*.js",
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rawanhamdi/beachPassScanner.git"
+    "url": "https://github.com/hagry/community"
   },
   "author": "",
   "license": "GPLv3",
@@ -25,21 +25,51 @@
     "url": "https://github.com/hagry/community/issues"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "~2.3.0",
     "body-parser": "~1.14.1",
     "cors": "^2.7.1",
+    "cron": "^1.1.0",
     "express": "~4.13.4",
-    "js-beautify": "^1.5.10",
+    "formidable": "^1.0.17",
+    "fs": "0.0.2",
+    "helmet": "^1.0.1",
     "jshint": "^2.8.0",
-    "request": "^2.74.0",
+    "minami": "^1.1.1",
+    "mkdirp": "~0.5.1",
+    "mocha": "^2.3.4",
+    "moment": "^2.10.6",
+    "mongodb": "^2.1.2",
+    "passport": "^0.3.2",
+    "pug": "^0.1.0",
+    "request": "~2.81.0",
+    "validator": "^4.4.0",
+    "when": "~3.7.7",
+    "winston": "~1.0.1",
+    "crypto": "0.0.3",
+    "node-zbarimg": "~1.0.1",
+    "child_process": "~1.0.2",
+    "path": "~0.12.7",
+    "http": "0.0.0"
   },
   "optionalDependencies": {
     "bcryptjs": "^2.3.0"
   },
   "devDependencies": {
     "forever": "^0.15.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-jsdoc": "~0.6.8",
+    "grunt-nginx": "^0.2.2",
+    "ink-docstrap": "~0.5.2",
     "js-beautify": "^1.5.10",
     "jsdoc": "~3.3.2",
     "jshint": "^2.8.0",
-    "pre-commit": "^1.1.1"
+    "minami": "^1.1.1",
+    "pre-commit": "^1.1.1",
+    "sinon": "^1.17.2",
+    "supertest": "^1.1.0",
+    "rpi-gpio": "~0.8.1"
   }
 }
